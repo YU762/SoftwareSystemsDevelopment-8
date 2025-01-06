@@ -13,11 +13,12 @@ function App() {
 }
 
 function Header({ text }) {
-    const { Navbar } = ReactBootstrap;
+    const { Container } = ReactBootstrap;
+
     return (
-        <Navbar bg="dark" variant="dark" className="mb-4">
-            <Navbar.Brand>{text}</Navbar.Brand>
-        </Navbar>
+        <Container className="text-center my-4">
+            <h1 className="display-4">{text}</h1>
+        </Container>
     );
 }
 
