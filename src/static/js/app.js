@@ -2,12 +2,22 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
+	    <Header text="ToDo App by yu762" />
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
         </Container>
+    );
+}
+
+function Header({ text }) {
+    const { Navbar } = ReactBootstrap;
+    return (
+        <Navbar bg="dark" variant="dark" className="mb-4">
+            <Navbar.Brand>{text}</Navbar.Brand>
+        </Navbar>
     );
 }
 
